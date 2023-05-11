@@ -9,7 +9,6 @@ function GuessInput({ addResult }) {
       className="guess-input-wrapper"
       onSubmit={event => {
         event.preventDefault();
-        console.log(input);
         addResult(input);
         setInput('');
       }}
