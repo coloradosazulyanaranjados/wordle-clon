@@ -30,14 +30,35 @@ body {
   }
 }
 
-button {
-  margin: 0;
-  padding: 0;
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
   border: none;
-  background: transparent;
+  padding: 0;
   cursor: pointer;
-  text-align: left;
-  color: inherit;
+  outline-offset: 4px;
+}
+
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+.restart {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .wrapper {
